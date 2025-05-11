@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.page-container {
+  @apply grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)];
+}
+
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+.btn-connect {
+  @apply cursor-pointer rounded-md border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-8;
+}
+
+.table-th {
+  @apply border-b border-gray-100 p-4 pl-8 text-[#5C6578] dark:border-gray-700 dark:text-[#5C6578] text-left text-xs;
+}
+
+.table-td {
+  @apply border-b border-gray-100 p-4 pl-8 text-[#060F22] dark:border-gray-700 dark:text-[#060F22] text-sm font-normal;
+}
+
+.btn-datepicker-input {
+  @apply flex items-center justify-between w-full px-4 py-2 border border-gray-300 rounded-md text-left bg-white focus:outline-none font-semibold text-xs;
+}
+
+.btn-primary {
+  @apply bg-[#4A6AF2] text-white font-semibold py-2 px-4 rounded text-xs;
+}
+
+.btn-paginate {
+  @apply flex items-center gap-2 py-2 border border-gray-300 px-5 text-sm rounded-md text-gray-700 hover:bg-gray-100 cursor-pointer;
+}
+
+.rdrDefinedRangesWrapper {
+  /* display: none; */
+}
